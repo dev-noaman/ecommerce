@@ -25,7 +25,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     } else {
         // Handle image upload
         if (isset($_FILES['image']) && $_FILES['image']['name'] != "") {
-            $target_dir = realpath("../public/images/blogs/") . '/'; // Get absolute path to /public/images/blogs
+            $target_dir = realpath("../../public/images/blogs/") . '/'; // Get absolute path to /public/images/blogs
             echo "Resolved Path: " . $target_dir; // Debugging output
 
             // Ensure the directory exists
